@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* 주변 배경색 */
+    
+    /* ⚠️ 핵심: 이미지들을 무조건 세로로(위아래로) 정렬하는 코드 */
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+}
+
+img {
+    width: 100%;
+    max-width: 500px;       /* 화면이 커져도 최대 너비 고정 */
+    height: auto;
+    display: block;         /* 이미지 아래에 생기는 미세한 틈새 방지 */
+    margin: 0;              /* 위아래 이미지를 빈틈없이 딱 붙임 */
+}
